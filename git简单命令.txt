@@ -1,0 +1,28 @@
+﻿1.下载git（github的环境语言）atom（就是一个和github有比较多联动功能的text editor）
+2.随便在哪个位置创建你的project directory
+3.在开始菜单搜索git bash（这是git自带的command prompt比系统自带的多一些显示功能）
+4.在git bash里把当前路径cd（change directory你肯定知道的吧~）到你创建的project directory的位置
+5.输入 git init 之后就可以把当前directory设置成git模式了
+
+
+常用的命令：
+git status
+git add 要添加的文件名 or .（添加所有当前文件）
+git commit -m "(添加文件后给的注释内容)"
+git log --oneline (查看改动日志)
+git checkout 改动编号(改动编号可以在上一条命令中查看，checkout后可以查看具体改动的内容）
+git checkout -b branch名 (创建新branch若branch已经存在则进入该branch)
+git checkout master （回到主branch）
+git merge branch名 （把这个branch合并到主branch）
+———————以上是本地操作——————————————
+git push 这里粘贴github上的远程host域名 （把你本地的directory 里的内容全部同步到github上）
+git clone url (copy the romote repo to your local as a new directory)
+git pull 这里粘贴github上的远程host域名 （把你想看用的这个github repo里的东西down到你本地上）
+git remote add origin url
+
+
+
+
+git checkout -b branch
+git push -u origin master/branch (then Host can see the request)
+git pull origin master (only pull from the master)
